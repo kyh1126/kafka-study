@@ -1,4 +1,4 @@
-package com.jenny.kafka;
+package com.jenny.kafka.chapter3;
 
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.ProducerRecord;

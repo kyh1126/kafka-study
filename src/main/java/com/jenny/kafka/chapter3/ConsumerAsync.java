@@ -1,4 +1,4 @@
-package com.jenny.kafka;
+package com.jenny.kafka.chapter3;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
@@ -12,7 +12,7 @@ public class ConsumerAsync {
         // 1. Properties 객체 생성
         Properties props = new Properties();
         // 2. 브로커 리스트 정의
-        props.put("bootstrap.servers", "kafka1:9091,kafka2:9092,kafka3:9093");
+        props.put("bootstrap.servers", "0.0.0.0:9091,0.0.0.0:9092,0.0.0.0:9093");
         // 3. 컨슈머 그룹 아이디 정의
         props.put("group.id", "peter-consumer01");
         // 4. 오토 커밋을 사용하지 않음

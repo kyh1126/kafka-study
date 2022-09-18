@@ -1,4 +1,4 @@
-package com.jenny.kafka;
+package com.jenny.kafka.chapter3;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
@@ -11,7 +11,7 @@ public class ProducerAsync {
         // 1. Properties 객체 생성
         Properties props = new Properties();
         // 2. 브로커 리스트 정의
-        props.put("bootstrap.servers", "kafka1:9091,kafka2:9092,kafka3:9093");
+        props.put("bootstrap.servers", "0.0.0.0:9091,0.0.0.0:9092,0.0.0.0:9093");
         // 3. 메시지 키와 밸류는 문자열 타입이므로 카프카의 기본 StringSerializer를 지정
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
